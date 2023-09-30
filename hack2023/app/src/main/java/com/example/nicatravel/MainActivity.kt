@@ -20,6 +20,20 @@ class MainActivity : AppCompatActivity() {
 
             // Inicia la nueva actividad
             startActivity(intent)
+
+
+
+        }
+        // Encuentra el botón
+        val button2 = findViewById<Button>(R.id.btncrear)
+
+// Define la acción del botón
+        button2.setOnClickListener {
+            // Crea un intent para navegar a la siguiente pantalla
+            val intent = Intent(this, Registro::class.java)
+
+            // Inicia la nueva actividad
+            startActivity(intent)
         }
     }
-}
+}    
