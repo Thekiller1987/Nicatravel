@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn"
         android:layout_width="163dp"
         android:layout_height="43dp"
         android:background="@drawable/redondo"
@@ -17,10 +17,9 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.731"
+        app:layout_constraintVertical_bias="0.677"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -50,4 +49,12 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.453"
         tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿No tienes una cuenta?"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="548dp" />
 </android.support.constraint.ConstraintLayout>
