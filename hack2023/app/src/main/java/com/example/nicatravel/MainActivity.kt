@@ -1,39 +1,46 @@
 package com.example.nicatravel
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Encuentra el botón
-        val button = findViewById<Button>(R.id.btn)
+        auth = FirebaseAuth.getInstance()
 
-        // Define la acción del botón
-        button.setOnClickListener {
-            // Crea un intent para navegar a la siguiente pantalla
-            val intent = Intent(this, mapa::class.java)
-
-            // Inicia la nueva actividad
-            startActivity(intent)
+        val emailEditText = findViewById<EditText>(R.id.txemail)
+        val passwordEditText = findViewById<EditText>(R.id.txps)
 
 
+        val loginButton = findViewById<Button>(R.id.btlogin)
 
-        }
-        // Encuentra el botón
-        val button2 = findViewById<Button>(R.id.btncrear)
+        loginButton.setOnClickListener {
+            // Obtiene el correo electrónico y la contraseña del usuario
+            val email = emailEditText.text.toString()
+            val password = passwordEditText.text.toString()
 
-// Define la acción del botón
-        button2.setOnClickListener {
-            // Crea un intent para navegar a la siguiente pantalla
-            val intent = Intent(this, Registro::class.java)
-
-            // Inicia la nueva actividad
-            startActivity(intent)
+            // Inicia sesión con Firebase Authentication
+            auth.signInWithEmailAndPassword(email, password)
+                .addOnSuccessListener {
+                    // El usuario ha iniciado sesión correctamente
+                    // Navega a la siguiente pantalla
+                    val intent = Intent(this, mapa::class.java)
+                    startActivity(intent)
+                }
+                .addOnFailureListener {
+                    // El usuario no ha podido iniciar sesión
+                    // Muestra un mensaje de error
+                    Toast.makeText(this, "Error al iniciar sesión", Toast.LENGTH_SHORT).show()
+                }
         }
     }
-}    
+}
