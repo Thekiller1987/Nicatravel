@@ -20,7 +20,7 @@ class menu : AppCompatActivity() {
 
             // Inicia la nueva pestaña con el Intent
             startActivity(intent)
-    }
+        }
         val breserva = findViewById<Button>(R.id.btreserva)
         breserva.setOnClickListener {
             // Crea un nuevo Intent para la otra pestaña
@@ -40,5 +40,5 @@ class menu : AppCompatActivity() {
         }
 
 
-}
+    }
 }
