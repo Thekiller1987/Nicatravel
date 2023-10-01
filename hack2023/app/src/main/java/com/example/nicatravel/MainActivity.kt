@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
                 .addOnSuccessListener {
                     // El usuario ha iniciado sesión correctamente
                     // Navega a la siguiente pantalla
-                    val intent = Intent(this, mapa::class.java)
+                    val intent = Intent(this, menu::class.java)
                     startActivity(intent)
                 }
                 .addOnFailureListener {
