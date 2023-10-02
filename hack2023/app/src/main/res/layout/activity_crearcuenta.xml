@@ -5,36 +5,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/lo"
-    tools:context=".MainActivity">
+    tools:context=".Crearcuenta">
+
 
     <Button
-        android:id="@+id/btlogin"
+        android:id="@+id/btlogin2"
         android:layout_width="163dp"
         android:layout_height="43dp"
         android:background="@drawable/redondo"
         android:backgroundTint="#C54923"
-        android:text="Iniciar Sesion"
+        android:text="Crea una Cuenta"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.677"
+        app:layout_constraintVertical_bias="0.71"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/txps"
         android:layout_width="248dp"
         android:layout_height="39dp"
-        android:hint="Ingrese Su Contraseña"
         android:ems="10"
+        android:hint="Repita Su Contraseña"
         android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintHorizontal_bias="0.57"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579"
+        app:layout_constraintVertical_bias="0.63"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/txps2"
+        android:layout_width="248dp"
+        android:layout_height="39dp"
+        android:ems="10"
+        android:hint="Ingrese Su Contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.531"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -46,38 +62,38 @@
         android:inputType="textEmailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.551"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.453"
+        app:layout_constraintVertical_bias="0.424"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="¿tienes una cuenta?"
         android:textColor="@color/black"
-        android:text="¿No tienes una cuenta?"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintHorizontal_bias="0.322"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.761"
+        app:layout_constraintVertical_bias="0.772"
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/textcrear1"
+        android:id="@+id/textcrear"
         android:layout_width="92dp"
         android:layout_height="17dp"
-        android:text="Crea Una"
+        android:text="inicia Sesion"
         android:textColor="#0F80E9"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.796"
+        app:layout_constraintHorizontal_bias="0.699"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.759"
+        app:layout_constraintVertical_bias="0.77"
         tools:ignore="MissingConstraints" />
 
 
