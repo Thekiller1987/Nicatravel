@@ -1,6 +1,7 @@
 package com.example.nicatravel
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -16,13 +17,16 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // Establece la orientación de pantalla en vertical
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+
         auth = FirebaseAuth.getInstance()
 
         val registro = findViewById<TextView>(R.id.textcrear1)
 
         registro.setOnClickListener {
             // Crea un objeto Intent
-            val intent = Intent(this, Crearcuenta::class.java)
+            val intent = Intent(this, Crearcuenta  ::class.java)
 
             // Inicia la actividad de registro en un hilo separado
             startActivity(intent)

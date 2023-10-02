@@ -2,6 +2,7 @@ package com.example.nicatravel
 
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -12,6 +13,11 @@ class menu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu)
+
+
+
+        // Establece la orientación de pantalla en vertical
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
 
         val bmapa = findViewById<Button>(R.id.btmapa)
         bmapa.setOnClickListener {

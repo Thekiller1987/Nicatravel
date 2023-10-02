@@ -1,6 +1,7 @@
 package com.example.nicatravel
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -14,6 +15,8 @@ class Crearcuenta : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_crearcuenta)
+        // Establece la orientación de pantalla en vertical
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
         auth = FirebaseAuth.getInstance()
 
         // Agrega el código para obtener el correo electrónico del usuario.
@@ -41,7 +44,7 @@ class Crearcuenta : AppCompatActivity() {
                 .addOnFailureListener {
                     // La cuenta no se ha podido crear.
                     // Muestra un mensaje de error en otra actividad.
-                  
+
                     startActivity(intent)
                 }
         }

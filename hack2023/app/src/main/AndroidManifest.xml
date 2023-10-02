@@ -18,14 +18,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Nicatravel"
         tools:targetApi="31">
-        <activity
-            android:name=".ErrorActivity2"
-            android:exported="false" />
+
         <activity
             android:name=".Crearcuenta"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".qr"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name="com.journeyapps.barcodescanner.CaptureActivity"
@@ -33,6 +33,7 @@
             tools:replace="screenOrientation" />
         <activity
             android:name=".reserva"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
@@ -49,17 +50,18 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="YOUR_API_KEY" />
 
-        <activity
-            android:name=".Registro"
-            android:exported="false" />
+
         <activity
             android:name=".mapa"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".menu"
+            android:screenOrientation="portrait"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:screenOrientation="portrait"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

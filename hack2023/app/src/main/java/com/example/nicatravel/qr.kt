@@ -1,6 +1,7 @@
 package com.example.nicatravel
 
 import android.content.Intent
+import android.content.pm.ActivityInfo
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -16,6 +17,11 @@ class qr : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityQrBinding.inflate(layoutInflater)
+
+        // Establece la orientación de pantalla en vertical
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+
+
         setContentView(binding.root)
 
         binding.btnScanner.setOnClickListener { initScanner() }

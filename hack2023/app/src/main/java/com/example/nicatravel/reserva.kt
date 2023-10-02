@@ -1,5 +1,6 @@
 package com.example.nicatravel
 
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebView
@@ -9,6 +10,11 @@ class reserva : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_reserva)
+
+
+        // Establece la orientación de pantalla en vertical
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
+
 
         // Crea una instancia de WebView
         val webView = findViewById<WebView>(R.id.webViewreserva)
