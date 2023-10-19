@@ -76,21 +76,20 @@
         android:id="@+id/imageView2"
         android:layout_width="137dp"
         android:layout_height="143dp"
-        android:background="@drawable/qr"
+        android:background="@drawable/codigoqr"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.833"
+        app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542"
-        tools:ignore="MissingConstraints"
-        tools:srcCompat="@drawable/qr" />
+        app:layout_constraintVertical_bias="0.522"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="137dp"
         android:layout_height="143dp"
-        android:background="@drawable/presupupuesto"
+        android:background="@drawable/presu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.141"
@@ -104,7 +103,7 @@
         android:id="@+id/imageView4"
         android:layout_width="137dp"
         android:layout_height="143dp"
-        android:background="@drawable/map"
+        android:background="@drawable/mapa"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.145"
@@ -117,15 +116,15 @@
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="137dp"
-        android:layout_height="156dp"
-        android:background="@drawable/calendar"
+        android:layout_height="143dp"
+        android:background="@drawable/reserva"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintHorizontal_bias="0.806"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.115"
         tools:ignore="MissingConstraints"
-        tools:srcCompat="@drawable/calendar" />
+     />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

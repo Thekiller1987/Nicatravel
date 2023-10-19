@@ -22,6 +22,7 @@ class qr : AppCompatActivity() {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
 
 
+
         setContentView(binding.root)
 
         binding.btnScanner.setOnClickListener { initScanner() }
