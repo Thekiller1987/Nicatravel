@@ -54,7 +54,7 @@ class presupuesto : AppCompatActivity() {
                 }
             }
 
-            // Crea un documento en Cloud Firestore
+            // Crea un documento en Cloud Fi                               restore
             val document = database.collection("presupuesto").document()
 
             // Agrega la información al documento

@@ -23,7 +23,7 @@ class mapa : AppCompatActivity() {
         webView.settings.javaScriptEnabled = true
 
 // Carga una página web en el WebView
-        webView.loadUrl("https://www.google.com/maps")
+        webView.loadUrl("https://maps.app.goo.gl/mpsSav6Auci3E4Xs7")
 // Define un cliente de WebView
         webView.webViewClient = object : WebViewClient() {
             override fun onPageFinished(view: WebView, url: String) {

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/m"
+    android:background="@drawable/mun"
     tools:context=".menu">
 
     <Button
@@ -13,14 +13,14 @@
         android:layout_height="55dp"
         android:background="@drawable/redondo"
         android:backgroundTint="#C54923"
-        android:text="Escáner códigos QR"
+        android:text="Escáner QR"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.873"
+        app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699"
+        app:layout_constraintVertical_bias="0.818"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -29,15 +29,14 @@
         android:layout_height="55dp"
         android:background="@drawable/redondo"
         android:backgroundTint="#C54923"
-        android:text="Presupuesto
- de viajes"
+        android:text="Presupuesto"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.699"
+        app:layout_constraintVertical_bias="0.819"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -46,14 +45,14 @@
         android:layout_height="55dp"
         android:background="@drawable/redondo"
         android:backgroundTint="#C54923"
-        android:text="Mapa Turístico"
+        android:text="Mapa"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349"
+        app:layout_constraintVertical_bias="0.381"
         tools:ignore="MissingConstraints" />
 
     <Button
@@ -62,14 +61,14 @@
         android:layout_height="55dp"
         android:background="@drawable/redondo"
         android:backgroundTint="#C54923"
-        android:text="Búsqueda de reserva en hoteles"
+        android:text="reserva en hoteles"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.876"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.349"
+        app:layout_constraintVertical_bias="0.381"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -79,10 +78,10 @@
         android:background="@drawable/codigoqr"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.522"
+        app:layout_constraintVertical_bias="0.615"
         tools:ignore="MissingConstraints" />
 
     <ImageView
@@ -92,10 +91,10 @@
         android:background="@drawable/presu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542"
+        app:layout_constraintVertical_bias="0.615"
         tools:ignore="MissingConstraints"
         tools:srcCompat="@drawable/presupupuesto" />
 
@@ -109,7 +108,7 @@
         app:layout_constraintHorizontal_bias="0.145"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115"
+        app:layout_constraintVertical_bias="0.134"
         tools:ignore="MissingConstraints"
         tools:srcCompat="@drawable/map" />
 
@@ -120,11 +119,10 @@
         android:background="@drawable/reserva"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintHorizontal_bias="0.861"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.115"
-        tools:ignore="MissingConstraints"
-     />
+        app:layout_constraintVertical_bias="0.134"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
