@@ -6,7 +6,7 @@ import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
-import com.google.firebase.auth.FirebaseAuth
+import costob
 
 class menu : AppCompatActivity() {
 
@@ -47,7 +47,7 @@ class menu : AppCompatActivity() {
         val bpresupuesto = findViewById<Button>(R.id.btpresupuesto)
         bpresupuesto.setOnClickListener {
             // Crea un nuevo Intent para la otra pestaña
-            val intent = Intent(this,prepresupuesto::class.java)
+            val intent = Intent(this,costob::class.java)
 
             // Inicia la nueva pestaña con el Intent
             startActivity(intent)

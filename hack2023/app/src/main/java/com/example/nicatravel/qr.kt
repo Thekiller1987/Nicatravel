@@ -32,7 +32,7 @@ class qr : AppCompatActivity() {
         val integrator = IntentIntegrator(this)
         integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
         integrator.setPrompt("Escanea Un codigo QR")
-        integrator.setTorchEnabled(true)
+        integrator.setTorchEnabled(false)
         integrator.setBeepEnabled(true)
         integrator.initiateScan()
     }
