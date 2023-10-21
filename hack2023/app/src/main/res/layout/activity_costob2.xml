@@ -5,14 +5,14 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/mun"
     tools:context=".costob_activity">
-
 
   <TextView
       android:id="@+id/textViewCosto"
-      android:layout_width="446dp"
-      android:layout_height="40dp"
-      android:layout_marginTop="100dp"
+      android:layout_width="141dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="68dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
@@ -20,12 +20,72 @@
 
   <TextView
       android:id="@+id/textViewNombre"
-      android:layout_width="446dp"
-      android:layout_height="40dp"
-      android:layout_marginTop="216dp"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent" />
+      app:layout_constraintTop_toBottomOf="@id/textViewCosto" />
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+  <TextView
+      android:id="@+id/textViewCosto2"
+      android:layout_width="141dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="124dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textViewNombre" />
+
+  <TextView
+      android:id="@+id/textViewNombre2"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textViewCosto2" />
+
+  <TextView
+      android:id="@+id/textViewCosto3"
+      android:layout_width="141dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="176dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textViewNombre2" />
+
+  <TextView
+      android:id="@+id/textViewNombre3"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textViewCosto3" />
+
+  <TextView
+      android:id="@+id/textViewCosto4"
+      android:layout_width="141dp"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="152dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textViewNombre3" />
+
+  <TextView
+      android:id="@+id/textViewNombre4"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="16dp"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.0"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@id/textViewCosto4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

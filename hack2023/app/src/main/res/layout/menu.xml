@@ -73,56 +73,55 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="137dp"
-        android:layout_height="143dp"
-        android:background="@drawable/codigoqr"
+        android:layout_width="158dp"
+        android:layout_height="157dp"
+        android:background="@drawable/qr2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintHorizontal_bias="0.877"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615"
+        app:layout_constraintVertical_bias="0.634"
         tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="137dp"
-        android:layout_height="143dp"
-        android:background="@drawable/presu"
+        android:layout_width="200dp"
+        android:layout_height="195dp"
+        android:background="@drawable/dinero"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.615"
+        app:layout_constraintVertical_bias="0.629"
         tools:ignore="MissingConstraints"
-        tools:srcCompat="@drawable/presupupuesto" />
+        tools:srcCompat="@drawable/dinero" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="137dp"
-        android:layout_height="143dp"
-        android:background="@drawable/mapa"
+        android:layout_width="301dp"
+        android:layout_height="343dp"
+        android:background="@drawable/mapa22"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.145"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134"
-        tools:ignore="MissingConstraints"
-        tools:srcCompat="@drawable/map" />
+        app:layout_constraintVertical_bias="0.041"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="137dp"
-        android:layout_height="143dp"
-        android:background="@drawable/reserva"
+        android:layout_width="132dp"
+        android:layout_height="130dp"
+        android:background="@drawable/calendar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintHorizontal_bias="0.888"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.134"
+        app:layout_constraintVertical_bias="0.198"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
