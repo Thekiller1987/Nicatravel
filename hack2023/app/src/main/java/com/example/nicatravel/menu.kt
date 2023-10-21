@@ -47,7 +47,7 @@ class  menu : AppCompatActivity() {
         val bpresupuesto = findViewById<Button>(R.id.btpresupuesto)
         bpresupuesto.setOnClickListener {
             // Crea un nuevo Intent para la otra pestaña
-            val intent = Intent(this,costob_activity::class.java)
+            val intent = Intent(this,prepresupuesto::class.java)
 
             // Inicia la nueva pestaña con el Intent
             startActivity(intent)
