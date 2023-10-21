@@ -26,7 +26,7 @@
         tools:ignore="MissingConstraints" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btngranada"
         android:layout_width="364dp"
         android:layout_height="41dp"
         android:backgroundTint="#C54923"

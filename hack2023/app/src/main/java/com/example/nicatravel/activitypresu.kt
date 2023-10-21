@@ -5,15 +5,17 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class prepresupuesto : AppCompatActivity() {
+class activitypresu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_prepresupuesto)
+        setContentView(R.layout.activity_activitypresu)
 
-        val btngranada = findViewById<Button>(R.id.btngranada)
-        btngranada.setOnClickListener {
+
+
+        val btnbajo = findViewById<Button>(R.id.btnbajo)
+        btnbajo.setOnClickListener {
             // Crea un nuevo Intent para la otra pestaña
-            val intent = Intent(this,activitypresu::class.java)
+            val intent = Intent(this,costob_activity::class.java)
 
             // Inicia la nueva pestaña con el Intent
             startActivity(intent)
