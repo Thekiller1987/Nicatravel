@@ -1,5 +1,6 @@
 package com.example.nicatravel
 
+import android.content.pm.ActivityInfo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.TextView
@@ -19,6 +20,10 @@ class costob_activity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_costob2)
+
+
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+
         textViewCosto = findViewById(R.id.textViewCosto)
         textViewNombre = findViewById(R.id.textViewNombre)
         textViewCosto2 = findViewById(R.id.textViewCosto2)

@@ -13,28 +13,39 @@ import com.google.zxing.integration.android.IntentIntegrator
 class qr : AppCompatActivity() {
 
     private lateinit var binding: ActivityQrBinding
+    private var isFlashOn: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityQrBinding.inflate(layoutInflater)
-
-        // Establece la orientación de pantalla en vertical
-        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT)
-
-
-
+        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         setContentView(binding.root)
 
         binding.btnScanner.setOnClickListener { initScanner() }
+
+        val btnToggleFlash = findViewById<Button>(R.id.btnToggleFlash)
+        btnToggleFlash.setOnClickListener { toggleFlash() }
     }
 
     private fun initScanner() {
         val integrator = IntentIntegrator(this)
         integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE)
-        integrator.setPrompt("Escanea Un codigo QR")
-        integrator.setTorchEnabled(false)
+        integrator.setPrompt("Escanea un código QR")
+        integrator.setTorchEnabled(isFlashOn)
         integrator.setBeepEnabled(true)
         integrator.initiateScan()
+    }
+
+    private fun toggleFlash() {
+        isFlashOn = !isFlashOn
+        val integrator = IntentIntegrator(this)
+        integrator.setTorchEnabled(isFlashOn)
+        val btnToggleFlash = findViewById<Button>(R.id.btnToggleFlash)
+        if (isFlashOn) {
+            btnToggleFlash.text = "Apagar Flash"
+        } else {
+            btnToggleFlash.text = "Encender Flash"
+        }
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -50,7 +61,7 @@ class qr : AppCompatActivity() {
                     intent.data =  Uri.parse(url)
                     startActivity(intent)
                 } else {
-                    Toast.makeText(this, "El valor escaneado no es una URL o esta Incorrecto", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "El valor escaneado no es una URL o está incorrecto", Toast.LENGTH_LONG).show()
                 }
             }
         } else {
